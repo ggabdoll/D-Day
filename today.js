@@ -1,19 +1,31 @@
 const today = document.querySelector(".js-today",".today__text");
 
 function getDate(){
-    const tod = new Date();
-    const month = tod.getMonth();
-    const day = tod.getDate();
-    const todtext =`${month}  ${day < 10 ? `0${day}` : day}`;
-    today.innerHTML = todtext;
-    return;
-}
+    const totime = new Date();
+    
+    var monthName = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug",
+                              "Sep","Oct","Nov","Dec");
+    const month = monthName[totime.getMonth()];
 
+    
 
+    
+    var wekenName = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+    const wekends = wekenName[totime.getDay()];
+     
 
-function init(){
+    
+    const day = totime.getDate();
+    
+     const todtext =`${month}  ${day < 10 ? `0${day}` : day} [${wekends}]`;
+        today.innerHTML = todtext;
+        
+        return;
+    }
+
+    function init(){
     getDate();
-    setInterval(getDate,100000);
+    setInterval(getDate,360000000000);
     return;
 }
 
