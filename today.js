@@ -4,7 +4,7 @@ function getDate(){
     const tod = new Date();
     const month = tod.getMonth();
     const day = tod.getDate();
-    const todtext =`${month}.${day < 10 ? `0${day}` : day}`;
+    const todtext =`${month}  ${day < 10 ? `0${day}` : day}`;
     today.innerHTML = todtext;
     return;
 }
