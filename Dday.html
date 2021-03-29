@@ -6,22 +6,36 @@
     <link rel="stylesheet" href="Dday.css">
 </head>
 <body>
-    <div class="js-today"></div>
-        <h3 class="today__text"></h3>
+    <section class="centers">
+        <div class="js-today"></div>
+            <h3 class="today__text"></h3>
     
-    <div class="js-time"></div>
-        <h4 class="time__text"></h4>
+        <div class="js-time"></div>
+            <h4 class="time__text"></h4>
+    </section>
     
-    <span class="js-weathers"></span>
-
-    <form class="js-todayTodo">
-        <input type="text" placeholder="Today TODO" />
-    </form>
-    <ul class="js-todayTOdoList"></ul>
-
+    <div class="js-weather weather">
+        <span class="weather__text"></span>
+    </div>
+    
+    <div class="toToDo">
+        <form class="js-todayTodo">
+            <input class="js-addToDo" type="text" placeholder="Today TODO" /> 
+        </form>                                                              
+    
+        <ul class="js-todayTOdoList"></ul>
+    </div>
+    
+    <div class="fuToDo">
+        <form class="js-futureTodo"> 
+            <input class = "js-addFToDo" placeholder="Future TODO" type="text">
+        </form> 
+        <ul class="js-futureTodoList"></ul>
+    </div>
         <script src="weathers.js"></script>
         <script src="today.js"></script>
         <script src="time.js"></script>
-        <script src="todaytodo.js"></script>
+        <script src="toToDo.js"></script>
+        <script src="fuToDo.js"></script>
 </body>
 </html>

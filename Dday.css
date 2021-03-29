@@ -1,3 +1,61 @@
-#month{
-    font-size: 30px;
+.centers{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color:ivory;
+}
+
+body{
+    background: rgb(50, 158, 225);
+}
+
+.js-today{
+    font-size: 50px;
+}
+
+.js-time{
+    font-size: 70px;
+}
+
+.toToDo{
+    color: white;
+    display: flex;
+    position: absolute;
+    right: 25cm;
+    padding: 20px;
+    font-size: 25px;
+    background: none;
+    border: none;
+    margin-block-start: 2px;
+    margin-left: 0px
+    
+}
+
+.fuToDo{
+    color: white;
+    display: flex;
+    position: absolute;
+    right: 13cm;
+    padding: 20px;
+    font-size: 25px;
+    background: none;
+    border: none;
+    margin-block-start: 2px;
+    margin-left: 0px
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
